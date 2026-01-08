@@ -32,30 +32,29 @@ var profile = {
     ]
 };
 document.addEventListener("DOMContentLoaded", function() {
-    // Update profile image
+
     document.querySelector('img').src = "https://media1.s-nbcnews.com/i/rockcms/2024-01/218475/240104-draymond-green-phoenix-suns-basketball-wm-306p-91d94f_f6a0e01b07dbe89255929931415b450b7780933b.jpg";
     
-    // Update Name and Title
     document.querySelector('.h4.mb-0').innerText = `${profile.bio.first} ${profile.bio.last}`;
     document.querySelector('.text-primary').innerText = profile.bio.title;
 
-    // Update Contact Info (Email, Phone, Location)
+
     document.querySelectorAll('.__cf_email__').forEach(el => el.innerText = 'draymond.green@example.com');
     document.querySelector('.fas.fa-mobile-alt').nextElementSibling.innerText = '+1 (555) 123-4567';
     document.querySelector('.fas.fa-map-marker-alt').nextElementSibling.innerText = 'Oakland, California, USA';
 
-    // Update "About Me" Section
+ 
     document.querySelector('#About Me').nextElementSibling.innerHTML = profile.bio.about;
 
-    // Update Education
+   
     document.querySelector('.card-body > h3').innerText = profile.edu.name;
     document.querySelector('.card-body > p').innerText = `Major: ${profile.edu.major}`;
 
-    // Update Career
+  
     document.querySelector('.card-body > h3').innerText = profile.career.company;
     document.querySelector('.card-body > p').innerText = `Title: ${profile.career.title}, Role: ${profile.career.role}`;
 
-    // Update Skills & Experience (Progress Bars)
+  
     let progressBars = document.querySelectorAll('.custom-progress .progress-bar');
     profile.skills.forEach((skill, index) => {
         progressBars[index].style.width = `${skill.level}%`;
@@ -64,13 +63,13 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelectorAll('.progress-text .text-end')[index].innerText = `${skill.level}%`;
     });
 
-    // Update Social Media Links
+
     document.querySelectorAll('.fab.fa-facebook-f').forEach(el => el.parentElement.setAttribute('href', profile.social[0].facebook));
     document.querySelectorAll('.fab.fa-twitter').forEach(el => el.parentElement.setAttribute('href', profile.social[1].X));
     document.querySelectorAll('.fab.fa-youtube').forEach(el => el.parentElement.setAttribute('href', profile.social[2].youtube));
     document.querySelectorAll('.fab.fa-linkedin-in').forEach(el => el.parentElement.setAttribute('href', profile.social[3].linkedIn));
 
-    // Update Background and Text Color (Optional)
+
     document.body.style.backgroundColor = "#f4f4f4";
     document.body.style.color = "#333";
 });
