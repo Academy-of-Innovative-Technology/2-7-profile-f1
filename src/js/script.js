@@ -33,7 +33,7 @@ var profile = {
 };
 document.addEventListener("DOMContentLoaded", function() {
     // Update profile image
-    document.querySelector('img').src = "https://cdn.nba.com/headshots/nba/latest/1040x760/1011075.png";
+    document.querySelector('img').src = "https://media1.s-nbcnews.com/i/rockcms/2024-01/218475/240104-draymond-green-phoenix-suns-basketball-wm-306p-91d94f_f6a0e01b07dbe89255929931415b450b7780933b.jpg";
     
     // Update Name and Title
     document.querySelector('.h4.mb-0').innerText = `${profile.bio.first} ${profile.bio.last}`;
