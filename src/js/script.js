@@ -1,33 +1,10 @@
 /* Use the profile below */
-
 var profile = {
     bio: {
-        first: "",
-        last: "",
-        title: "",
-        about: ""
-    }, 
-
-    social: [
-        { facebook: " "},
-        { X: "" },
-        { youtube: "" },
-        { linkedIn: "" }
-    ],
-    edu: {
-        name: "",
-        major: ""
-    },
-    career: {
-        company: "",
-        title: "",
-        role: ""
+        first: "Draymond",
+        last: "Green",
+        title: "NBA Player",
+        about: "Draymond Green is a professional basketball player known for his versatility, defensive prowess, and leadership on the Golden State Warriors. He is a three-time NBA champion and has won NBA Defensive Player of the Year honors."
     },
 
-    skills: [
-        { title: "", level: 0 },
-        { title: "", level: 0 },
-        { title: "", level: 0 }
-    ]
-};
-
+   
